@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Load Booking P1</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #A60070; /* Original background */
+    }
+    .container {
+        text-align: center;
+        color: #FFFFFF;
+        max-width: 400px;
+        padding: 20px;
+        position: relative;
+    }
+    .header {
+        font-size: 3em; /* Increased font size */
+        font-weight: bold;
+        color: #000000; /* Black color */
+        margin-bottom: 10px;
+        font-family: 'Brush Script MT', cursive; /* Cursive font */
+    }
+    .subtitle {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+    .input-group {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .input-group input[type="text"] {
+        width: 50px;
+        padding: 10px;
+        font-size: 1em;
+        border: none;
+        outline: none;
+        background-color: #FFFFFF;
+        color: #A60070;
+        text-align: center;
+    }
+    .input-group input[type="tel"] {
+        width: 250px;
+        padding: 10px;
+        font-size: 1em;
+        border: none;
+        outline: none;
+        background-color: #FFFFFF;
+        color: #A60070;
+        text-align: center;
+    }
+    .search-btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 1em;
+        font-weight: bold;
+        color: #A60070;
+        background-color: #FF66B2;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .search-btn:hover {
+        background-color: #FF8ACF;
+    }
+    .tabs {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .tab {
+        padding: 10px 20px;
+        margin: 0 5px;
+        border-radius: 20px;
+        background-color: #FFD7E9;
+        color: #A60070;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .tab.active {
+        background-color: #FF66B2;
+        color: #FFFFFF;
+    }
+    .home-icon {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 30px;
+        height: 30px;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #A60070;
+        font-size: 1.5em;
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <a href="#" class="home-icon">🏠</a>
+    <div class="header">Load Booking</div>
+    <div class="tabs">
+        <div class="tab active">Contact Number</div>
+        <div class="tab">Booking Reference</div>
+    </div>
+    <div class="subtitle">Please enter the contact of the primary passenger on the booking</div>
+    <div class="input-group">
+        <input type="text" value="+27" readonly>
+        <input type="tel" placeholder="Enter phone number">
+    </div>
+    <button class="search-btn">Search</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmo Air Booking</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Background & Main Layout */
+        body {
+            background-color: #C03F7D;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 500px;
+            padding: 20px;
+            background-color: #d285b7;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        /* Header Logo and Slogan */
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo h1 {
+            font-size: 36px;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .logo p {
+            font-size: 14px;
+            font-style: italic;
+        }
+        .logo h1 span {
+            font-size: 24px;
+            color: #FFD700;
+            font-style: italic;
+        }
+
+        /* Pricing Table */
+        .table {
+            width: 100%;
+            background-color: #f3e6f1;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .table-row {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed #C03F7D;
+            padding: 5px 0;
+        }
+
+        .table-row:last-child {
+            border-bottom: none;
+        }
+
+        /* Pay Button */
+        .pay-button {
+            display: block;
+            width: 100%;
+            background-color: #C03F7D;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .pay-button:hover {
+            background-color: #b53672;
+        }
+
+        /* Back Button */
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 24px;
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        /* Shopping Cart Icon */
+        .cart-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Container for Booking UI -->
+    <div class="container">
+        <!-- Back Button -->
+        <a href="#" class="back-button">&#x2190;</a>
+
+        <!-- Shopping Cart Icon -->
+        <span class="cart-icon">&#x1F6D2;</span>
+
+        <!-- Logo Section -->
+        <div class="logo">
+            <h1>COSMO AIR</h1>
+            <p>Travel the Universe, One Flight at a Time</p>
+        </div>
+
+        <!-- Pricing Table -->
+        <div class="table">
+            <div class="table-row">
+                <span>Total Including VAT</span>
+                <span>(Price)</span>
+            </div>
+            <div class="table-row">
+                <span>For (n) Adults</span>
+                <span>(Price)</span>
+            </div>
+            <div class="table-row">
+                <span>For (n) Children</span>
+                <span>(Price)</span>
+            </div>
+            <div class="table-row">
+                <span>For (n) Infants</span>
+                <span>(Price)</span>
+            </div>
+            <div class="table-row">
+                <span>Fare</span>
+                <span>(Price)</span>
+            </div>
+            <div class="table-row">
+                <span>Taxes</span>
+                <span>(Price)</span>
+            </div>
+            <div class="table-row">
+                <span>Discount</span>
+                <span>(Price)</span>
+            </div>
+        </div>
+
+        <!-- Pay Button -->
+        <a href="#" class="pay-button">Pay</a>
+    </div>
+
+</body>
+</html>
